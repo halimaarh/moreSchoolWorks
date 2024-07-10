@@ -1,0 +1,105 @@
+      :root {
+   --primary-color: darkorchid;
+   --secondary-color: darkmagenta;
+ }
+ 
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: black;
+ }
+ /*********navbar*******/
+ #navbar{
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   background-color: var(--secondary-color);
+ }
+ #navbar ul{
+   list-style: none ;
+ }
+ #navbar ul li{
+   position: relative;
+   display: inline-block;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-left: 25px;
+   padding-right: 25px;
+   color: aliceblue;
+   border: none;
+   border-radius: 5px;
+ }
+ #navbar ul li:hover{
+   cursor: pointer;
+   color: black;
+   background-color: var(--primary-color);
+ }
+ #navbar ul li a{
+   text-decoration: none;
+   color: aliceblue;
+ }
+ #navbar ul li a:hover{
+   cursor: pointer;
+   color: black;
+   background-color: var(--primary-color);
+ } 
+ /*******hide nested ul*****/
+ #navbar ul li ul{
+   display: none;
+ }
+ /******nested dropdown show*******/
+ #navbar ul li:hover ul{
+   background-color: var(--secondary-color);
+   display:block;
+   color: black;
+   position: absolute;
+   left: 0;
+   width: 190px;
+   margin-top: 0.7rem;
+ }
+ #navbar ul li:hover ul li a{
+   color: black;
+ }
+
+ .container{
+   height: 120vh;
+   top: 0;
+   background: rgba(0,0,0,0.5);
+   background-image:url(./img/sample.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ .one{
+   margin: auto;
+   padding-top: 270px;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   color: aliceblue;
+ }
+ .m-heading{
+   font-size: 3rem;
+   padding-bottom: 40px;
+   line-height: 1rem;
+ }
+ p{
+   padding: 3px;
+   line-height:2rem;
+   font-size: 1.5rem;
+ }
+ .btn{
+   color: aliceblue;
+   text-align: center;
+   margin-top: 30px;
+   padding: 3px;
+   height: 60px;
+   width: 200px;
+   border: none;
+   border-radius: 30px;
+   background-color: var(--secondary-color);
+ }

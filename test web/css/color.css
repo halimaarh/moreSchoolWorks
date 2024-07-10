@@ -1,0 +1,198 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Times New Roman', Times, serif;
+   color: snow;
+}
+h1{
+   font-size: 4rem;
+   padding: 30px 0;
+}
+h2{
+   font-size: 2rem;
+   padding: 30px 0;
+   color: black;
+}
+
+
+.container-name{
+   margin: auto 0;
+   background-color: #222;
+}
+.name{
+   padding: 50px 0;
+   margin: auto;
+   text-align: center;
+}
+
+.container-color{
+   top: 0;
+   text-align: center;
+   position: relative;
+   margin: auto;
+   padding: 1rem;
+}
+.container-color .color{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: center;
+   align-content: center;
+}
+.container-color .color p{
+   font-size: 1.5rem;
+   text-align: center;
+   padding-top: 100px;
+   margin: 30px 30px;
+   width: 250px;
+   height: 300px;
+}
+
+
+/******color blue***********/
+#one{
+   background-color: navy ;
+}
+#two{
+   background-color: darkblue;
+}
+#three{
+   background-color: midnightblue;
+}
+#four{
+   background-color: slateblue;
+}
+#five{
+   background-color: royalblue;
+}
+#six{
+   background-color: dodgerblue;
+}
+#seven{
+   background-color: deepskyblue;
+}
+#eight{
+   background-color: mediumblue;
+}
+#nine{
+   background-color: blue;
+}
+#ten{
+   background-color: darkslateblue;
+}
+#eleven{
+   background-color: steelblue;
+}
+#twelve{
+   background-color: skyblue;
+}
+#thirteen{
+   background-color: lightblue;
+}
+
+
+/*****dark-background********/
+.dat{
+   background-color: black;
+   text-align: center;
+   position: relative;
+   margin: auto;
+   padding: 1rem;
+}
+.dat .color{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: center;
+   align-content: center;
+}
+.dat p{
+   color: black;
+   font-size: 1.5rem;
+   text-align: center;
+   padding-top: 100px;
+   margin: 30px 30px;
+   width: 250px;
+   height: 300px;
+}
+.dat h2{
+   color: aliceblue;
+}
+
+/*****color white*******/
+#one-a{
+   background-color: snow ;
+}
+#two-a{
+   background-color: aliceblue;
+}
+#three-a{
+   background-color: white;
+}
+#four-a{
+   background-color: floralwhite;
+}
+#five-a{
+   background-color: ghostwhite;
+}
+#six-a{
+   background-color: #ffffff;
+}
+#seven-a{
+   background-color: #fff;
+}
+#eight-a{
+   background-color: lavenderblush;
+}
+#nine-a{
+   background-color: #ffff;
+}
+
+
+/******color green***********/
+#one-b{
+   background-color: springgreen ;
+}
+#two-b{
+   background-color: turquoise;
+}
+#three-b{
+   background-color: teal;
+}
+#four-b{
+   background-color: greenyellow;
+}
+#five-b{
+   background-color: cadetblue;
+}
+#six-b{
+   background-color: darkgreen;
+}
+#seven-b{
+   background-color: lime;
+}
+#eight-b{
+   background-color: green;
+}
+#nine-b{
+   background-color: limegreen;
+}
+#ten-b{
+   background-color: darkseagreen;
+}
+#eleven-b{
+   background-color: forestgreen;
+}
+#twelve-b{
+   background-color: aquamarine;
+}
+#thirteen-b{
+   background-color: chartreuse;
+}
+
+

@@ -1,0 +1,103 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root{
+   --animate-speed:2s
+}
+body{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   background-color: rgba(0,0,0,0.9);
+   color: ghostwhite;
+   /*overflow: hidden;*/
+}
+
+h1{
+   font-size: 4rem;
+   padding-bottom: 30px;
+}
+p{
+   font-size: 1.5rem;
+   line-height: 1.4rem;
+}
+.btn{
+ width: 300px;
+ display: inline-block;
+ background-color: #fff;
+ color: black;
+ border: none;
+ text-decoration: none;
+ padding: 10px 10px;
+ margin-top: 30px;
+ transition:all 0.3s ease-out;
+}
+.btn-dark{
+   width: 300px;
+ display: inline-block;
+ background-color:black;
+ color:#fff;
+ border: none;
+ text-decoration: none;
+ padding: 10px 1rem;
+ margin-top: 30px;
+ transition:all 0.3s ease-in;
+}
+.btn:hover{
+   background-color: black;
+   color: #fff;
+}
+.btn-dark:hover{
+   background-color:#fff;
+   color:black;
+}
+
+/*******section page********/
+.page{
+   padding:0 1rem;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+}
+#page-1{
+   background-color: tan;
+}
+#page-2{
+   background-color:royalblue;
+}
+#page-3{
+   background-color: greenyellow;
+}
+#page-4{
+   background-color:teal;
+}
+#page-5{
+   background-color:slateblue ;
+  /* background-image: url(./img/sample.jpg);*/
+}
+
+#page-1 h1{
+   transform:translateY(-1700px);
+   animation:heading var(--animate-speed) forwards ease-in;
+}
+@keyframes heading{
+   to{
+      transform: translateY(0);
+      color: black;
+   }
+}
+#page-1 p{
+   transform:translateX(-1900px);
+   animation:text var(--animate-speed) forwards ease-in 2.5s;
+}
+@keyframes text{
+   to{
+      transform: translateX(0);
+      color: black;
+      font-size:2rem;
+      line-height: 2rem;
+   }
+}

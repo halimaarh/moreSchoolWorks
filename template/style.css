@@ -1,0 +1,465 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   overflow-x: hidden;
+   color: #fff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+   color: green;
+}
+h1{
+   font-size: 3.5rem;
+}
+h2{
+   font-size: 2rem;
+   padding: 20px 0;
+}
+p{
+   color: azure;
+   font-size: 1.3rem;
+   line-height: 1.5rem;
+}
+
+
+
+/************nav***********/
+nav{
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 20px 0;
+}
+.bar-menu{
+   background-color: black;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+}
+.bar-menu h2{
+   padding: 0 5px;
+}
+/*designing hamburger menu*/
+.menu-bar{
+   position: relative;
+   z-index: 1;
+}
+.menu-bar .toggler{
+   position: absolute;
+   z-index: 2;
+   width: 40px;
+   height: 40px;
+   opacity: 0;
+   cursor: pointer;
+}
+.menu-bar .hamburger{
+   position: absolute;
+   z-index: 1;
+   background-color: black;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+}
+.menu-bar .hamburger> div{
+   z-index: 1;
+   display: flex;
+   flex: none;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   height: 2px;
+   width: 90%;
+   background: #fff;
+}
+.menu-bar .hamburger> div::before,
+.menu-bar .hamburger> div::after{
+   content: "";
+   z-index: 1;
+   top: 13px;
+   position: absolute;
+   justify-content: center;
+   align-items: center;
+   height: 2px;
+   width: 100%;
+   background: #fff;
+}
+.menu-bar .hamburger> div::after{
+   top: -13px;
+}
+.menu-bar .toggler:checked + .hamburger > div{
+   transform: rotate(135deg);
+}
+.menu-bar .toggler:checked + .hamburger > div::before,
+.menu-bar .toggler:checked + .hamburger > div::after{
+   top: 0;
+   transform: rotate( 90deg);
+}
+/******show menu*********/
+.menu-bar .toggler:checked:hover + .hamburger > div{
+   background-color: forestgreen;
+}
+.menu-bar .toggler:checked ~ .menu{
+   visibility: visible;
+}
+.menu-bar .toggler:checked ~ .menu> div{
+   transform: scale(1);
+   transition-duration: 0.75s;
+   padding: 1rem;
+   width: 40vw;
+   height: 30vw;
+   display: flex;
+}
+.menu-bar .toggler:checked ~ .menu> div> div{
+   opacity:  1;
+   transition: opacity o.4s ease 0.4s;
+}
+
+/******hide menu*********/
+.menu-bar .menu{
+   position: relative;
+   background-color: #222;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   visibility: hidden;
+}
+.menu-bar .menu> div{
+   display: flex;
+   flex: none;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 50px;
+   transition: all 0.4s ease;
+   transform: scale(0);
+}
+.menu-bar .menu> div> div{
+   text-align: center;
+   max-width: 200px;
+   max-height: 200px;
+   opacity: 0;
+   margin: 0 auto;
+   transition: opacity 0.4s ease;
+}
+.menu-bar .menu> div> div> ul> li{
+   list-style: none;
+   text-align: center;
+   /*padding: 1rem;*/
+   padding: 10px;
+}
+.menu-bar .menu> div> div> ul> li> a{
+   text-decoration: none;
+   font-size: 1rem;
+   color: #fff;
+   padding: 20px 0;
+}
+.menu-bar .menu> div> div> ul> li> a:hover{
+   color: forestgreen;
+}
+
+/**********container-nav-content*********/
+.container-nav-content{
+   background: url(./city_25.jpg) no-repeat center,center;
+   background-size: cover;
+   height: 1100px;
+   /*background-color: magenta;*/
+   margin: 0 auto;
+   padding: 1rem;
+}
+/*********content-container***********/
+.content-container{
+   margin: 0 auto;
+   padding: 100px 0;
+   height: 600px;
+   justify-items: center;
+   text-align: center;
+   align-items: center;
+}
+.content-container h1{
+   padding: 20px 0;
+}
+.content-btn{
+   margin: 20px auto;
+   display: block;
+   width: 200px;
+   height: 35px;
+   background-color: green;
+   border-color: aliceblue;
+   border-style: solid;
+   font-size: 1.5rem;
+}
+.content-btn a{
+   color: aliceblue;
+   text-decoration: none;
+}
+
+
+
+/*********one-back********/
+.one{
+   background-color: lawngreen;
+   padding: 1rem;
+}
+/********who we are***********/
+.who-we-are{
+   padding: 80px 0;
+   margin: 0 auto;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.who-we-are h1{
+   padding: 30px 0;
+}
+.who-we-are h2{
+   color: black;
+}
+.who-we-are p{
+   padding: 30px 0;
+}
+/***********awards***********/
+.awards{
+   margin: 50px auto;
+}
+.two{
+   border-bottom: 5px solid black;
+   width: 40%;
+   margin: 30px auto;
+}
+
+
+/***************what we do************/
+.three{
+   margin: 100px auto;
+   padding: 1rem;
+   text-align: center;
+   justify-content: center;
+   color: black;
+}
+.three p{
+   color: #666;
+   padding: 20px 0;
+}
+.what-we-do{
+   padding: 60px 0;
+}
+.tools{
+   padding: 50px 0;
+}
+.tool-container{
+   padding: 70px 1rem;
+   border-bottom: 3px solid black;
+   border-top: 3px solid black;
+   background-color: #222;
+}
+.tool-btn{
+   margin: 40px auto;
+   display: block;
+   width: 200px;
+   height: 35px;
+   background-color: green;
+   border-style: solid;
+   border-color: aliceblue;
+   border-radius: 30px;
+   font-size: 1rem;
+}
+.tool-btn a{
+   color: aliceblue;
+   text-decoration: none;
+   font-size: 1.5rem;
+   padding: 5px 10px;
+}
+
+/*********recent work************/
+.recent-works{
+   color: #fff;
+   margin: 0 auto;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   background-color: black;
+   text-align: center;
+   justify-content: center;
+}
+.works{
+   background-color: black;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.works img{
+   width: 400px;
+   height: 400px;
+   margin: 15px auto;
+}
+
+
+
+/*******our client*************/
+.our-client{
+   color: black;
+   margin: auto;
+   padding: 100px 0;
+   justify-content: center;
+}
+.client{
+   margin: 15px auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.client-info{
+   margin: 10px auto;
+   width: 350px;
+   padding: 50px 0;
+   background-color: #222;
+   box-shadow: 5px 5px black ;
+}
+.client-info p{
+   padding: 1rem;
+}
+.client-info h2{
+   padding: 1px 0;
+}
+.client-info img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+}
+
+
+
+/**********contact************/
+.contact{
+   margin-top: 100px;
+   background-color: #222;
+   text-align: center;
+   justify-content: center;
+}
+.contact-us{
+   padding: 100px 16px;
+}
+.message{
+   background-color: black;
+   /*margin: 0 auto;*/
+   justify-content: center;
+   padding: 30px 0;
+}
+.message p{
+   color: #666;
+}
+.message form{
+   width: 100%;
+   padding: 1rem;
+   margin: auto;
+}
+.message form label{
+   font-size: 1rem;
+   padding: 15px 0;
+   margin: auto;
+   text-align: left;
+   display: block;
+   width: 85%;
+}
+.message form textarea{
+   font-size: 1rem;
+   padding: 15px 0;
+  margin: auto;
+   text-align: left;
+   display: block;
+   width: 85%;
+   background-color: black;
+   color: #fff;
+   border-style: solid;
+   border-bottom: 3px solid #222;
+   border-top: transparent;
+   border-left: transparent;
+   border-right: transparent;
+}
+.message form input{
+   font-size: 1rem;
+   padding: 3px;
+   margin: 15px auto;
+   display: block;
+   width: 85%;
+   background-color: black;
+   color: #fff;
+   border-style: solid;
+   border-bottom: 3px solid #222;
+   border-top: transparent;
+   border-left: transparent;
+   border-right: transparent;
+}
+
+
+
+/***********contact-information********************************/
+.contact-information{
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+.info-contactt{
+   margin: auto;
+   width: 400px;
+   padding: 70px 0;
+}
+
+
+/********coda**********/
+.five{
+   background-color: black;
+   justify-content: center;
+   padding: 40px 0;
+}
+.coda{
+   margin: 0 auto;
+   padding: 1rem;
+   text-align: justify;
+}
+.coda h2{
+   text-align: center;
+}
+.coda p{
+   padding: 1rem;
+}
+.five #email{
+   justify-content: center;
+   margin: 10px auto;
+   width: 80%;
+   height: 30px;
+   background-color: #222;
+   color: #fff;
+   padding: 3px;
+}
+.get-notified{
+   margin: 40px auto;
+   padding: 1rem;
+   text-align: justify;
+}
+.get-notified p{
+   padding: 1rem;
+}
+
+footer{
+   justify-content: center;
+   text-align: center;
+   background-color: #222;
+   padding: 15px 0;
+}
